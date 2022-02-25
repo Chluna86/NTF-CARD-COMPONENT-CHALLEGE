@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* GENERAL STYLES */
+
+/* Colors */
+:root {
+    /* Primary */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    
+    /* Neutral */
+    --Very-dark-blue-main: hsl(217, 54%, 11%); /*main BG*/
+    --Very-dark-blue-card: hsl(216, 50%, 16%); /*card BG*/
+    --Very-dark-blue-line: hsl(215, 32%, 27%); /*line*/
+    --White: hsl(0, 0%, 100%);
+}
+
+/* ## Typography
+### Body Copy
+- Font size (paragraph): 18px
+### Font
+- Weights: 300, 400, 600
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background: var(--Very-dark-blue-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background: var(--Very-dark-blue-card);
+    border-radius: 0.7rem;
+    height: 500px;
+    width: 310px;
+    
+    /*add to box shadow*/
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 21px;
+}
+
+img {
+    border-radius: 0.7rem;
+    justify-self: center;
+}
+
+.title {
+    color: var(--White);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 17px 0px;
+}
+
+.text > p {
+    color: var(--White);
+    font-weight: 200;
+    opacity: 0.5;
+    font-size: 16.5px;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 18px;
+    align-items: center;
+}
+
+.value, .date {
+    display: flex;
+    flex-direction: row;
+    max-height: 16px;
+    align-items: center;
+}
+
+.price {
+    color: var(--Cyan);
+    padding: 0px 7px;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.days {
+    color: var(--White);
+    font-size: 15px;
+    font-weight: 300;
+    opacity: 0.6;
+    padding: 0px 4px;
+}
+
+.price, .days {
+    font-size: 14px;
+}
+
+.line {
+    opacity: 0.2;
+    border-bottom: solid 1px var(--White);
+    width: 100%;
+    border-radius: 50px;
+    margin-top: 15px;
+}
+
+.owner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.owner > img {
+    max-width: 30px;
+    max-height: 30px;
+    border: solid 1px var(--White);
+    border-radius: 100%;
+}
+
+.creator {
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--White);
+}
+
+#creation {
+    opacity: 0.5;
+    padding-right: 3px;
+}
