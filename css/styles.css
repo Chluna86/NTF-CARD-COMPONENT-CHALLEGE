@@ -139,6 +139,11 @@ img {
     color: var(--White);
 }
 
+.name:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
 #creation {
     opacity: 0.5;
     padding-right: 3px;
