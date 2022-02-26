@@ -53,6 +53,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 21px;
+    padding-top: 25px;
 }
 
 img {
